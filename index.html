@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="settings">
+            <label for="mode">Mode:</label>
+            <select id="mode">
+                <option value="ai">Player vs AI</option>
+                <option value="pvp">Player vs Player</option>
+            </select>
+        </div>
+
+        <button id="voice-button" class="btn-voice">Start Listening</button>
+        <p id="recognized-command" class="command-display"></p>
+        <p id="current-turn" class="turn-display"></p>
+        <p class="instructions">Say commands like: "1st", "2nd", "3rd", "restart"</p>
+
+        <div id="board" class="board"></div>
+        <button id="restart" class="btn-restart">Restart Game</button>
+        <p id="message" class="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
